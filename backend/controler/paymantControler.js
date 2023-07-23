@@ -46,7 +46,9 @@ export const paymentverification = asyncHandler(async (req, res) => {
         });
 
         res.redirect(
-            `http://localhost:3000/paymentsuccess?reference=${orderId}`
+            `https://shopicart-3v7e.onrender.com/paymentsuccess?reference=${orderId}`
+
+            
 
         );
     } else {

@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import Message from "../compenets/Message"
 import { getorderDetails } from '../redux/action/orderActions';
-import store, { server } from '../redux/store';
+import { server } from '../redux/store';
 
 const OrderScreen = () => {
     const { id } = useParams()
@@ -40,7 +40,7 @@ const OrderScreen = () => {
     const checkoutHandler = async (amount, orderId) => {
 
 
-        const { data } = await axios.post(`${store}/checkout`, {
+        const { data } = await axios.post(`${server}/checkout`, {
             amount
         })
 

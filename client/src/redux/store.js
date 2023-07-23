@@ -65,5 +65,5 @@ const store = configureStore({
 export default store;
 
 
-// export const server = 'http://13.233.198.225:4000/api/v1'
-export const server = 'http://localhost:8080/api/v1'
+export const server = 'https://shopicart-3v7e.onrender.com/api/v1'
+// export const server = 'http://localhost:8080/api/v1'

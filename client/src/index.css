@@ -1,0 +1,120 @@
+.screenSize {
+    min-height: 80vh;
+}
+
+.brandlogo {
+    width: 150px;
+
+}
+
+.headerButton {
+    background-color: #00C6D7;
+}
+
+.searchBar {
+    background-color: rgb(248, 248, 248);
+}
+
+.dropdown {
+    background-color: rgb(248, 248, 248);
+
+}
+
+.searchBarBtn {
+    background-color: rgb(248, 248, 248);
+    border-radius: 0;
+}
+
+.catagories {
+    display: flex;
+}
+
+.catagories ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+.catagoriesDrop {
+    background-color: white;
+}
+
+/*  top nav */
+
+.topNavMain {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.topnavFirst {
+    display: flex;
+}
+
+/*   bestDeals */
+
+
+
+
+.bestDealmain {
+    display: flex;
+}
+
+
+.blueBox {
+    padding: 50px;
+
+}
+
+.newsletterboxForm {
+    display: flex;
+    position: relative;
+}
+
+.newsletterboxFormButton {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    background-color: rgb(97, 93, 93);
+    color: white;
+}
+
+.newsletterboxInput {
+    width: 400px;
+    height: 45px;
+}
+
+.newsletterbox {
+    display: flex;
+    align-items: center;
+}
+
+.socialLogos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerItems ul li {
+    list-style: none;
+    color: gray;
+    font-size: 14px;
+}
+
+.footer_Hvaany p {
+    font-size: 14px;
+}
+
+.carousel_main {
+    background-color: rgb(255, 255, 255);
+}
+
+.carousalimage {
+    border-radius: 10px;
+}
+
+.card {
+    -webkit-box-shadow: 2px 11px 19px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 11px 19px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 11px 19px -6px rgba(0, 0, 0, 0.75);
+}

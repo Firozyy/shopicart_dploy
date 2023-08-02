@@ -16,6 +16,14 @@ import PaymentScreen from "./screen/PaymentScreen"
 import PlaceOrder from './screen/PlaceOrder';
 import OrderScreen from './screen/OrderScreen';
 import Success from './screen/Success';
+import UserListSCreen from './screen/UserListSCreen';
+import UserEditScreen from './screen/UserEditScreen';
+
+
+import Orderlist from './screen/Orderlist';
+import OrderDetails from './screen/OrderDetails';
+import ProductListScreen from './screen/ProductListScreen';
+import ProdictEditScreen from './screen/ProdictEditScreen';
 
 const App = () => {
   return (
@@ -36,6 +44,12 @@ const App = () => {
         <Route path='/placeOrder' element={<PlaceOrder />} exact />
         <Route path='/order/:id' element={<OrderScreen />} exact />
         <Route path='/paymentsuccess' element={<Success />} exact />
+        <Route path='/admin/userList' element={<UserListSCreen />} exact />
+        <Route path='/admin/user/:id/edit' element={<UserEditScreen />} exact />
+        <Route path='/admin/orderList' element={<Orderlist />} exact />
+        <Route path='/admin/orderdetails/:id' element={<OrderDetails />} exact />
+        <Route path='/admin/productList' element={<ProductListScreen />} exact />
+        <Route path='/admin/product/:id/edit' element={<ProdictEditScreen />} exact />
       </Routes>
       <Footer />
     </Roter>

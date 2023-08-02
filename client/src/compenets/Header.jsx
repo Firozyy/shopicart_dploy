@@ -33,17 +33,7 @@ function Header() {
                         >
 
 
-                            <Dropdown>
-                                <Dropdown.Toggle variant='red' className='dropdown' id="dropdown-basic">
-                                    Dropdown Button
-                                </Dropdown.Toggle>
 
-                                <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
                             <Form className="d-flex ms-3">
                                 <Form.Control
                                     type="search"
@@ -58,22 +48,20 @@ function Header() {
                             </Form>
 
                         </Nav>
-                        
-                        <Nav.Link >
-                            <FontAwesomeIcon icon={faHeart} />
-                        </Nav.Link>
-                        <Nav.Link className='ms-3'  >
-                        <LinkContainer to={'/cart'}>
-                        <FontAwesomeIcon icon={faBasketShopping} />
-                        </LinkContainer>
-                            
+
+
+                        <Nav.Link className='ms-3' >
+                            <LinkContainer to={'/cart'}>
+                                <FontAwesomeIcon icon={faBasketShopping} />
+                            </LinkContainer>
+
                         </Nav.Link>
                         <Nav.Link className='ms-3'  >
                             <FontAwesomeIcon icon={faUserAlt} />
                         </Nav.Link>
 
                         {userInfo ? (
-                            <NavDropdown className='ms-2' title={userInfo.name} id='username'>
+                            <NavDropdown className='ms-2 bg-white' title={userInfo.name} id='username'>
                                 <LinkContainer to='/profile'>
                                     <NavDropdown.Item>Profile</NavDropdown.Item>
                                 </LinkContainer>
@@ -88,11 +76,11 @@ function Header() {
                                 </Nav.Link>
                             </LinkContainer>
                         )} {userInfo && userInfo.isAdmin && (
-                            <NavDropdown className='ms-2' title="ADMIN" id='adminmenu'>
+                            <NavDropdown className='ms-2 bg-white adminDrop' title="ADMIN" id='adminmenu'>
                                 <LinkContainer to='/admin/userList'>
                                     <NavDropdown.Item>Users</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to='/admin/createProduct'>
+                                <LinkContainer to='/admin/productList'>
                                     <NavDropdown.Item>Products</NavDropdown.Item>
                                 </LinkContainer>
                                 <LinkContainer to='/admin/orderList'>
@@ -101,12 +89,32 @@ function Header() {
 
                             </NavDropdown>
                         )}
-                        <Button
-                            variant=''
-                            className='ms-5 px-4 py-2 headerButton text-light' >
-                            Classifilds
-                        </Button>
+                        <div>
+                            <Dropdown className='bg-white catagoryDropdown' >
+                                <Dropdown.Toggle variant='red' className='catagoriesDrop' id="dropdown-basic">
+                                    Catagories
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Books</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Electronics</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Reeal estate</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1">Dor -m furniture</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Men</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Reeal estate</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1">Books</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Women</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Music</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1">Hobbies games</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Toys</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">kids</Dropdown.Item>
+
+
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </div>
                     </Navbar.Collapse>
+
                 </Container>
             </Navbar>
         </Container>

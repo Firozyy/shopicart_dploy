@@ -156,7 +156,7 @@ export const dleteUser = (id) => async (dispatch, getState) => {
         dispatch({ type: "USER_REMOVE_REQUEST" });
 
         const { userLogin: { userInfo } } = getState()
-        await axios.delete(`${server}/${id}`, {
+        await axios.delete(`${server}/admin/user/${id}`, {
             headers: {
                 "Content-Type": 'application/json',
                 authrization: `Bearer ${userInfo.token}  `

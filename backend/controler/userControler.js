@@ -127,12 +127,13 @@ export const getUsers = asyncHandler(async (req, res) => {
 })
 
 
-//@desc delteUser
+//@desc deleteUser
 // rout http://localhost:8080/api/v1/admin/user/:id
 // private/adminONLY
 
 export const deleteUser = asyncHandler(async (req, res) => {
     const { id } = req.params
+  
     const user = await User.findById(id)
     if (!user) {
         res.status(404)

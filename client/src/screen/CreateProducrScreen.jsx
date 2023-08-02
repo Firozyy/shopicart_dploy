@@ -82,7 +82,7 @@ const CreateProducrScreen = () => {
               <Col xs={12} md={6}>
             
           
-                <h1>create product </h1>
+                <h1>Create product </h1>
 
 
 

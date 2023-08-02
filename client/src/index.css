@@ -118,3 +118,17 @@
     -moz-box-shadow: 2px 11px 19px -6px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 11px 19px -6px rgba(0, 0, 0, 0.75);
 }
+
+.catagoryDropdown {
+   display: none;
+}
+@media screen and (max-width: 991px) {
+    .catagoryDropdown {
+       display: inline;
+    }
+    .catagories{
+        display: none;
+    }
+  }.adminDrop{
+    font-size: 12px;
+  }

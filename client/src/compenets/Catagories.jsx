@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Dropdown } from 'react-bootstrap'
-
+import './style.css'
 const Catagories = () => {
     return (
         <Container>

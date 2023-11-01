@@ -27,14 +27,14 @@ const Home = () => {
     <main>
 
 
-      <Carousals />
+       <Carousals />
 
       <BestDeals products={products} />
     
 
-      <ProductCarousal products={products}/>
+      {/* <ProductCarousal products={products}/> */}
+      {/* <NewsletterBox /> */}
       
-      <NewsletterBox />
 
     </main>
 

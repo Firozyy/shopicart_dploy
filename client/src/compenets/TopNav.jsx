@@ -2,11 +2,11 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faBasketShopping, faDollar, faEnvelope, faHeart, faLocation, faLocationArrow, faMagnifyingGlass, faMessage, faPhone, faUsd, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { Col, Container, Row } from 'react-bootstrap'
-
+import './style.css'
 const TopNav = () => {
     return (
 
-        <div className='bg-primary'>
+        <div className='bg-primary top_nav'>
             <Container>
                 <Row className='bg-primary py-3 text-light '>
                     <Col className='topNavMain'>

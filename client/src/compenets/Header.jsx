@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from "react-router-bootstrap";
 import { logout } from '../redux/action/userActions';
+import logo from "../asset/Group 1.png"
 function Header() {
     const dispatch = useDispatch()
     const { userInfo } = useSelector(state => state.userLogin)
@@ -22,7 +23,7 @@ function Header() {
             <Navbar expand="lg" >
                 <Container fluid>
                     <Navbar.Brand>
-                        <Link to={"/"}><Image className='brandlogo' src={"https://res.cloudinary.com/dkjzzkcls/image/upload/v1689658791/logo-6_2_wlirjz.png"} /></Link>
+                        <Link to={"/"}><Image className='brandlogo' src={logo} /></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">

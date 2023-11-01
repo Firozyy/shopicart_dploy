@@ -35,9 +35,6 @@ const indexPage = path.join(buildPath, '/index.html');
 
 app.use(express.static(buildPath));
 
-app.get('/*', (req,res)=>{
-    res.sendFile(indexPage);
-});
 
 app.use(notFound);
 app.use(errorHandler);

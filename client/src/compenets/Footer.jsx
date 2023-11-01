@@ -9,27 +9,8 @@ const Footer = () => {
     return (
         <Container>
             <Row className='pb-3'>
-                <Col md={2}>
-                    <div>
-                        <Image className='w-100' src={"https://res.cloudinary.com/dkjzzkcls/image/upload/v1689658791/logo-6_2_wlirjz.png"} />
-                    </div>
-                    <div><p>ste architecto iure! Modi nesciunt voluptas, nobis beatae nostrum cum. Nulla?</p></div>
-                    <div>
-                        <Row>
-                            <Col className='socialLogos p-3'>
-                                <YouTubeIcon />
-                                <LinkedInIcon />
-
-                                <TwitterIcon />
-
-
-                                <InstagramIcon />
-                            </Col>
-
-                        </Row>
-                    </div>
-                </Col>
-                <Col md={2} className='mt-3'>
+               
+                <Col md={2} className=' footer_data mt-3'>
                     <div><b>QUICK LINKS</b></div>
                     <div className='mt-3 footerItems'><ul className='p-0 m-0'>
                         <li>Products</li>
@@ -40,7 +21,7 @@ const Footer = () => {
 
                     </ul></div>
                 </Col>
-                <Col md={2} className='mt-3'>
+                <Col md={2} className='footer_data mt-3'>
                     <div><b>CUSTOMAT AREA</b></div>
                     <div className='mt-3 footerItems'><ul className='p-0 m-0'>
                         <li>My account</li>
@@ -51,7 +32,7 @@ const Footer = () => {
                         <li>My Cart</li>
                     </ul></div>
                 </Col>
-                <Col md={2} className='mt-3'>
+                <Col md={2} className='footer_data mt-3'>
                     <div><b>VENDER AREA</b></div>
                     <div className='mt-3 footerItems'><ul className='p-0 m-0'>
                         <li>partner with us</li>
